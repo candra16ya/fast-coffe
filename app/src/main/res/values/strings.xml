@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Fast Coffe</string>
+    <string name="name_coffe">Name of Coffe</string>
+    <string name="details">Detail</string>
+    <string name="my_name">Muhammad Feri Candra Wijaya</string>
+    <string name="my_email">mferychandra2018@gmail.com</string>
+    <string name="about_me">Hello, my name is Muhammad Feri Candra Wijaya, usually called Candra. I am a high school graduate from PGRI 109 Tangerang majoring in natural sciences. My hobbies are playing guitar and calisthenic. My favorite music is Lofi Music.</string>
+</resources>

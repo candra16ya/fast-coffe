@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Not RecyclerView, this is CardView-->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    app:cardMaxElevation="12dp"
+    app:cardPreventCornerOverlap="true"
+    android:outlineSpotShadowColor="@color/black">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/rv_img_item"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="4dp"
+            tools:src="@tools:sample/avatars"/>
+
+        <TextView
+            android:id="@+id/rv_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/rv_img_item"
+            android:layout_toRightOf="@+id/rv_img_item"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            tools:text="@string/name_coffe" />
+
+        <TextView
+            android:id="@+id/rv_item_detail"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/rv_item_name"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toEndOf="@id/rv_img_item"
+            android:layout_toRightOf="@+id/rv_img_item"
+            android:ellipsize="end"
+            android:maxLines="5"
+            tools:text="@string/details" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
